@@ -25,7 +25,4 @@ public class AccountController {
 	public ResponseEntity<AccountDto> createAccount(@RequestBody CreateAccountRequest request){
 		return new ResponseEntity<>(accountService.createAccount(request), HttpStatus.OK);
 	}
-	
-	
-
 }
